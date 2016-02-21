@@ -1,0 +1,101 @@
+header.navigation {
+	background: white;
+	z-index: 3;
+	width: 100%;
+	transition: all 2.5s ease;
+
+	> .container {
+
+		.logo-main {
+	      padding-top: $verticalrhythym;
+	      margin: 0 auto;
+	      transition: all 2.5s ease;
+	      margin-bottom: 5px;
+	  	}
+	  	> ul {
+	  		float: none;
+	  		margin-bottom: 5px;
+	  		transition: all 2.5s ease;
+
+			> li {
+				display: block;
+				float: none;
+
+				> a {
+				    margin: 5px;
+					background: $main;
+					color: white;
+					border-radius: 20px;
+					text-align: center;
+				}
+				&:hover,
+				&:active {
+
+					> a {
+						background: $mainDarken;
+					}
+				}
+			}
+	  	}
+	  	.btn-link {
+	  		display: block;
+	  	}
+	}
+}
+@media (min-width: 480px){
+		header.navigation {
+			position: fixed;
+			background: transparent;
+
+			.logo-main {
+				display: none;
+			}
+			ul {
+				display: flex;
+			    justify-content: center;
+
+			    > li {
+			    	float: left;
+			    	display: inline;
+			    	text-align: left;
+
+			    	> a {
+			    		padding: 5px 10px;
+
+			    		&:not(:first-child){
+			    			margin: 5px 0;
+			    		}
+			    	}
+			    }
+		    }
+	}
+	.navigation.scrolled {
+		background: rgba( 255, 255, 255, 0.6);
+		display: flex;
+	    justify-content: center;
+	    transition: all 2.5s ease;
+
+	    .logo-main {
+	    	display: block;
+	    	padding-top: 3vh!important;
+	    	float: left;
+	    	width: 200px;
+	    	transition: all 2.5s ease;
+	    }
+	    ul {
+	    	float: right!important;
+	    	transition: all 2.5s ease;
+	    }
+	}
+}
+@media (min-width: 768px){
+	.navigation.scrolled {
+		
+		.logo-main {
+			
+		}
+		ul {
+			
+		}
+	}
+}

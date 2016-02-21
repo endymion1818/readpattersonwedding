@@ -1,0 +1,199 @@
+.content {
+  padding: $verticalrhythym 0;
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -2px;
+  }
+  h3 {
+   font-weight: bold;
+   color: $accent;
+   margin-top: 0;
+   margin-bottom: 20px;
+
+    > img {
+      display: inline;
+      width: 190px;
+      height: auto;
+      margin-bottom: 5px;
+      margin-right: 10px;
+    }
+  }
+}
+section.home-content {
+  padding-bottom: 0;
+  // background:url('../img/background-image.jpg') no-repeat center center;
+  background: white;
+  background-size: cover;
+
+  > .container {
+    padding-bottom: 3vh;
+
+    > .logo-main {
+      display: block;
+      margin: 0 auto;
+      padding: $verticalrhythym 0 $verticalrhythymmore;
+      width: 100%;
+      max-width: 319px;
+      height: auto;
+    }
+    > .hostillustration {
+      max-width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 auto 40px;
+      margin-top: 8em;
+    }
+    > .icon-mouse {
+        width: 30px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+
+    }
+  }
+}
+section.panel1 {
+  background-color: white;
+  // background:url('../img/background-servers1.jpg') no-repeat center center;
+  background-size: cover;
+}
+section.panel2 {
+  background-color: white;
+  // background:url('../img/background-servers2.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+section.panel3 {
+  background-color: white;
+}
+section.calloutbanner {
+  background-color: $main;
+
+  > .container {
+      text-align: center;
+
+      > h2 {
+        color: white;
+        margin-bottom: 20px;
+
+        a {
+        color: white;
+        text-decoration: underline;
+
+        &:hover,
+        &:active {
+          color: $accent;
+        }
+      }
+    }
+  }
+}
+section.contact {
+
+  h2,
+  h3 {
+    color: white;
+    margin-top: 10px;
+
+    a {
+      color: $main;
+      text-decoration: underline;
+
+      &:hover,
+      &:active {
+        color: white;
+      }
+    }
+  }
+  p {
+    color: white;
+  }
+  form {
+
+    label {
+      color: white;
+    }
+    input,
+    textarea {
+      border-radius: 0;
+    }
+    button.btn-submit {
+      background: $main;
+      color: white;
+      border-radius: 20px;
+
+      &:hover,
+      &:active {
+        background: $mainDarken;
+      }
+    }
+  }
+}
+section.panelcontact {
+  padding-top: 30vh;
+  background: white;
+}
+@media (min-width: 480px) {
+  .home-content {
+      padding-top: 20vh;
+  }
+}
+@media (min-width: 50em){
+    body  {
+    font-size: 13px;
+    }
+    .content {
+      padding: 10vh 0;
+    }
+    .home-content {
+
+    > .container {
+        padding-bottom: 1px;
+
+      > .hostillustration {
+          max-width: 60%;
+          max-height: 40vh;
+          margin-bottom: $verticalrhythymmore;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .content {
+    > .container {
+        padding-left: 0px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .content {
+    > .container {
+
+    }
+  }
+}
+@media(min-height: 800px) {
+
+  body  {
+    font-size: 16px;
+  }
+  .home-content > .container > .hostillustration {
+    max-width: 60%;
+     max-height: 45vh;
+
+  }
+}
+@media(min-height: 900px) {
+
+  .home-content > .container > .hostillustration {
+    max-width: 75%;
+     max-height: 50vh;
+
+  }
+}
+@media (max-width:480px){
+  h2 {
+    font-size: 26px;
+  }
+}
