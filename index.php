@@ -75,7 +75,7 @@
     </div>
   </section>
   <div class="responsiveIframeEmbed">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47043.5021631507!2d-0.3460643159794766!3d51.44743558564018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760c106c9e5b5f%3A0xbb1666e13117cb1!2sPembroke+Lodge!5e0!3m2!1sen!2suk!4v1456072614822" width="2200" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19893.184975967837!2d-0.25350776430138866!3d51.4462557956653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760c106c9e5b5f%3A0xbb1666e13117cb1!2sPembroke+Lodge!5e0!3m2!1sen!2suk!4v1456128474220" width="1900" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
 <section class="content panel3" id="programme">
   <div class="container">
@@ -133,21 +133,33 @@
   </section>
 <section class="content contact" id="contact">
   <div class="container">
-  <h2 class="text-center">RSVP</h2>
-  <br/>
-  <form method="post" action="contactengine.php" id="replyform">
-      <div class="col-sm-6">
+    <h2 class="text-center">RSVP</h2>
+    <br/>
+    <div class="col-sm-6">
+      <h3>Respondez ici, s'il vous plait!</h3>
+      <p>You can use this form on the right to confirm your attendance to the wedding!</p>
+      <p>All you need is the reference number printed on your invitation...</p>
+    </div>
+    <div class="col-sm-6">
+      <form method="post" action="contactengine.php" id="replyform">
         <label for="Booking">Your Booking reference</label><br>
         <input type="text" class="form-control" name="Booking" id="booking" maxlength="60" required /><br>
+        <label for="attendees">Who's coming?</label><br>
+        <input type="text" class="form-control" name="attendees" id="attendees" maxlength="60" required /><br>
         <label for="Dietary">Dietary Requirements</label><br>
         <textarea type="textarea" class="form-control" name="dietary" id="dietary" maxlength="60" required /></textarea><br>
         <label for="playlist">Playlist Requests</label><br>
-        <textarea name="playlist" class="form-control" rows="5" cols="20" id="playlist" maxlength="2000" required></textarea><br>
+        <textarea name="playlist" class="form-control" rows="2" cols="20" id="playlist" maxlength="2000" required></textarea><br>
+        <label for="present">Present Request</label><br>
+        <input type="radio" name="present" value="toaster" checked> Toaster<br>
+        <input type="radio" name="present" value="toaster"> Toaster<br>
+        <input type="radio" name="present" value="toaster"> Toaster<br>
+        <input type="radio" name="present" value="toaster"> Toaster<br>
+        <input type="radio" name="present" value="toaster"> Toast rack<br>
+        <input type="radio" name="present" value="other"> Other<br><br>
         <button type="submit" name="submit" value="Submit" class="btn btn-submit">Submit</button>
+      </form>
     </div>
-    <div class="col-sm-6">
-    </div>
-   </form>
   </div>
 </section>
 <?php include('footer.php');?>

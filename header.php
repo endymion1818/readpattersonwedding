@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<?php echo $pagedesc; ?>">
   <title><?php echo $pagetitle; ?></title>
-  <link rel="stylesheet" href="css/readpattersonwedding.min.css">
+  <link rel="stylesheet" href="css/readpattersonwedding.css">
 	<script type='text/javascript' src='js/headerscripts.min.js'></script>
-  <?php include('partials/favicons.php');?>
 </head>
 <body>
   <header class="navigation">
@@ -27,7 +26,7 @@
       <ul class="nav nav-pills">
         <li><a href="/demo/#location" id="locationlink">Location</a></li>
         <li><a href="/demo/#programme" id="programmelink">Programme</a></li>
-        <li><a href="/demo/#contact" id="contactlink">Contact</a></li>
+        <li><a href="/demo/#contact" id="contactlink">Respond</a></li>
       </ul>
     </div>
   </header>

@@ -22,9 +22,7 @@
   }
 }
 section.home-content {
-  padding-bottom: 0;
-  // background:url('../img/background-image.jpg') no-repeat center center;
-  background: white;
+  background:url('../img/background-image.jpg') no-repeat center center fixed;
   background-size: cover;
 
   > .container {
@@ -110,6 +108,7 @@ section.contact {
     color: white;
   }
   form {
+    color: white;
 
     label {
       color: white;

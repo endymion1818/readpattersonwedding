@@ -3043,6 +3043,11 @@ a,
   .col-sm-6:last-child {
     margin-top: 30px; } }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .hostillustration {
+    max-width: 764px !important;
+    max-height: 362px !important; } }
+
 .footer {
   width: 100%;
   border-top: 6px solid #AF2F00;
@@ -3118,8 +3123,7 @@ footer {
       margin-right: 10px; }
 
 section.home-content {
-  padding-bottom: 0;
-  background: white;
+  background: url("../img/background-image.jpg") no-repeat center center fixed;
   background-size: cover; }
   section.home-content > .container {
     padding-bottom: 3vh; }
@@ -3182,19 +3186,19 @@ section.contact h3 {
 section.contact p {
   color: white; }
 
-section.contact form label {
+section.contact form {
   color: white; }
-
-section.contact form input,
-section.contact form textarea {
-  border-radius: 0; }
-
-section.contact form button.btn-submit {
-  background: #AF2F00;
-  color: white;
-  border-radius: 20px; }
-  section.contact form button.btn-submit:hover, section.contact form button.btn-submit:active {
-    background: #7c2100; }
+  section.contact form label {
+    color: white; }
+  section.contact form input,
+  section.contact form textarea {
+    border-radius: 0; }
+  section.contact form button.btn-submit {
+    background: #AF2F00;
+    color: white;
+    border-radius: 20px; }
+    section.contact form button.btn-submit:hover, section.contact form button.btn-submit:active {
+      background: #7c2100; }
 
 section.panelcontact {
   padding-top: 30vh;
@@ -3305,8 +3309,8 @@ header.navigation {
       transition: all 2.5s ease; } }
 
 .animated {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both; }
 
@@ -3326,31 +3330,31 @@ header.navigation {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
+            transform: translate3d(0, 100%, 0); }
   to {
     opacity: 1;
     -webkit-transform: none;
-    transform: none; } }
+            transform: none; } }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
+            transform: translate3d(0, 100%, 0); }
   to {
     opacity: 1;
     -webkit-transform: none;
-    transform: none; } }
+            transform: none; } }
 
 .hostillustration {
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in; }
+  -webkit-animation: fadeIn 2s ease-in;
+          animation: fadeIn 2s ease-in; }
+
+.waypoint {
+  opacity: 0; }
 
 .fadeInUp {
-  -webkit-animation-name: fadeInUp;
-          animation-name: fadeInUp; }
-
-.csstransitions .waypoint {
-  opacity: 0; }
+  -webkit-animation: fadeInUp 2s forwards;
+          animation: fadeInUp 2s forwards; }
 
 /*# sourceMappingURL=readpattersonwedding.css.map */
