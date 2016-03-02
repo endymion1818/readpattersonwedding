@@ -3018,6 +3018,14 @@ a,
 .btn-link {
   color: #AF2F00; }
 
+.btn-timanne {
+  background: #AF2F00;
+  color: white;
+  border-radius: 16px; }
+  .btn-timanne:hover, .btn-timanne:active {
+    background: #7c2100;
+    color: white; }
+
 .img-responsive {
   max-width: 100%;
   height: auto; }

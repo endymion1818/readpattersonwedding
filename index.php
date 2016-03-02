@@ -1,4 +1,4 @@
-<?php 
+<?php
   $pagetitle = 'Tim & Anne\'s Wedding | Details and Bookings';
   $pagedesc  = 'Tim Read and Anne Patterson are getting married! If you have recieved an invitation as a guest during the day or for the evening, please register your attendance here. You can also find information about the location of the event and a schedule for the day.';
   include('header.php');?>
@@ -27,9 +27,9 @@
         <div class="col-sm-6 content-column">
           <div class="row">
             <div class="col-xs-2 col-md-3 icon-column">
-              <img 
-                src="img/icon-parking.png" 
-                srcset="img/icon-parking.svg" 
+              <img
+                src="img/icon-parking.png"
+                srcset="img/icon-parking.svg"
                 alt="backup data being recovered to local machine illustration"
                 width="75"
                 height="75"
@@ -37,9 +37,13 @@
                 >
             </div>
             <div class="col-xs-10 col-md-9 waypoint">
+                <h3>Travelling In</h3>
+                <p>It is possible to travel to Richmond by train or tube but Pembroke Lodge is some distance from the centre of the Richmond. For this reason we recommend travelling by car.</p>
+                <p>For directions please see the map below or download a printable version:</p>
+                <a class="btn btn-timanne" href="pembroke_map.pdf" target="_blank" title="printable PDF of Pembroke Lodge">Printable Map</a>
+                <p>&nbsp;</p>
                 <h3>Parking</h3>
-                <p> Free at Location but can be busy during day up to 17.00 hours so get there early to find space.  Cars can be left overnight there, taxis can be arranged but all gates except Richmond Lodge gate are closed at dusk so people leaving to taxis coming and going have to use this entrance </p>
-                <p>Pembroke Lodge café actually closes at 17.00 hours so parking easy after this.</p>
+                <p>Free at Pembroke Lodge but can be busy during the day so please ensure you allow enough time as you may have to wait for a parking space to become available. Cars can be left there overnight and taxis can be arranged. All gates except Richmond Lodge Gate are closed at dusk so all guests arriving or departing after this time will need to use this entrance.</p>
                 <p><strong>Evening guests</strong> will have no problems except to enter/exit via Richmond Gate only.</p>
                 <p>Taxi firms available in Richmond who know procedure (see <a href="http://www.pembroke-lodge.co.uk/" target="_blank">Pembroke Lodge website</a> for details).</p>
             </div>
@@ -48,9 +52,9 @@
         <div class="col-sm-6 content-column">
           <div class="row">
             <div class="col-xs-2 col-md-3 icon-column">
-              <img 
-                src="img/icon-hotel.png" 
-                srcset="img/icon-hotel.svg" 
+              <img
+                src="img/icon-hotel.png"
+                srcset="img/icon-hotel.svg"
                 alt="cloud computing illustration"
                 width="75"
                 height="75"
@@ -68,6 +72,11 @@
                 <li><a href="http://www.therichmondparkhotel.co.uk/" target="_blank">Richmond Park Hotel (not in the Park!)</a></li>
                 <li><a href="http://www.premierinn.com/gb/en/hotels/england/greater-london/london/london-richmond.html" target="_blank">Premier Inn Richmond</a></li>
               </ul>
+              <p>Additionally, if you choose to stay in Croydon, transport to the venue will be provided:</p>
+              <ul>
+                <li><a href="#" target="_blank">Croydon Park Hotel</a></li>
+                <li><a href="#" target="_blank">Jurys Inn</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -84,9 +93,9 @@
         <div class="col-sm-6 content-column">
           <div class="row">
             <div class="col-xs-2 col-md-3 icon-column">
-              <img 
-                src="img/icon-events.png" 
-                srcset="img/icon-events.svg" 
+              <img
+                src="img/icon-events.png"
+                srcset="img/icon-events.svg"
                 alt="backup data being recovered to local machine illustration"
                 width="75"
                 height="75"
@@ -96,11 +105,13 @@
             <div class="col-xs-10 col-md-9 waypoint">
                 <h3>Programme</h3>
                 <ul>
-                  <li>14.30 Guest Arrival time latest!</li>
+                  <li>14.30 Guest Arrival time</li>
                   <li>15.00 Wedding, ends at 15.30</li>
+                  <li>15.30 Drinks Reception and photos</li>
                   <li>16.45 Call to Wedding Breakfast</li>
                   <li>19.00 Speeches and Cake cutting</li>
-                  <li>19.30 Dinner ends, Evening guests arrive</li>
+                  <li>19.30 Evening Guests arrival time</li>
+                  <li>19.45 Cake cutting followed by first dance</li>
                   <li>20.00 Bar opens and DJ starts </li>
                   <li>21.00 Evening Buffet</li>
                   <li>23.45 Bar closes</li>
@@ -113,9 +124,9 @@
         <div class="col-sm-6 content-column">
           <div class="row">
             <div class="col-xs-2 col-md-3 icon-column">
-              <img 
-                src="img/icon-pemblodge.png" 
-                srcset="img/icon-pemblodge.svg" 
+              <img
+                src="img/icon-pemblodge.png"
+                srcset="img/icon-pemblodge.svg"
                 alt="pembroke lodge icon"
                 width="75"
                 height="75"
@@ -138,7 +149,6 @@
     <div class="col-sm-6">
       <h3>Respondez ici, s'il vous plait!</h3>
       <p>You can use this form on the right to confirm your attendance to the wedding!</p>
-      <p>All you need is the reference number printed on your invitation...</p>
     </div>
     <div class="col-sm-6">
       <form method="post" action="contactengine.php" id="replyform">

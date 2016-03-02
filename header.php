@@ -26,7 +26,7 @@
       <ul class="nav nav-pills">
         <li><a href="/demo/#location" id="locationlink">Location</a></li>
         <li><a href="/demo/#programme" id="programmelink">Programme</a></li>
-        <li><a href="/demo/#contact" id="contactlink">Respond</a></li>
+        <li><a href="/demo/#contact" id="contactlink">RSVP</a></li>
       </ul>
     </div>
   </header>

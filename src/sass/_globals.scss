@@ -16,6 +16,17 @@ a,
 .btn-link {
   color: $main;
 }
+.btn-timanne {
+  background: $main;
+  color: white;
+  border-radius: 16px;
+
+  &:hover,
+  &:active {
+    background: $mainDarken;
+    color: white;
+  }
+}
 .img-responsive {
   max-width: 100%;
   height: auto;
