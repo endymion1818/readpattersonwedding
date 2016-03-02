@@ -16,8 +16,8 @@
   </section>
   <section class="footer">
     <div class="container">
-      <h3>We are pleased to announce that Tim Read and Anne Patterson are getting married! </h3>
-      <p>If you have recieved an invitation as a guest during the day or for the evening, please register your attendance here. You can also find information about the location of the event and a schedule for the day.</p>
+      <h3>Anne and Tim are getting married!</h3>
+      <p>We look forward to welcoming you to be part of our special day.  This website will provide you with all the practical information you need and you are able to RSVP via the contact form.</p>
     </div>
   </section>
 <section class="content panel2" id="location">
@@ -149,6 +149,8 @@
     <div class="col-sm-6">
       <h3>Respondez ici, s'il vous plait!</h3>
       <p>You can use this form on the right to confirm your attendance to the wedding!</p>
+      <h3>Gifts</h3>
+      <p>We would be delighted simply to see you at our wedding  and help us celebrate our special day together.  We don’t have a gift list but if you wish to make a gesture, then a contribution towards our dream honeymoon later in the year would be much appreciated.</p>
     </div>
     <div class="col-sm-6">
       <form method="post" action="contactengine.php" id="replyform">
