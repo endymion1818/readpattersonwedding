@@ -28,3 +28,9 @@ $("#contactlink2").click(function(e) {
         scrollTop: $("#contact").offset().top
     }, 2000);
 });
+$("#socialwalllink").click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: $("#socialwall").offset().top
+    }, 2000);
+});

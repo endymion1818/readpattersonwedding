@@ -7,7 +7,6 @@
   <meta name="description" content="<?php echo $pagedesc; ?>">
   <title><?php echo $pagetitle; ?></title>
   <link rel="stylesheet" href="css/readpattersonwedding.css">
-	<script type='text/javascript' src='js/headerscripts.min.js'></script>
 </head>
 <body>
   <header class="navigation">
