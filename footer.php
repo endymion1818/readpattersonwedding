@@ -12,7 +12,7 @@
     <p>Banner photograph by <a href="https://www.flickr.com/photos/brucebentley/20755125482/">Ashley Peterson Photography</a> with a little bit of white balance.</p>
     </section>
   </footer>
-	<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js?ver=1.11.1'></script>
-  <script src="js/footerscripts.js"></script>
+	<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script src="js/footerscripts.min.js"></script>
 </body>
 </html>

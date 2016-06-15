@@ -1,12 +1,11 @@
 <?php
 
-$EmailFrom = "website@hosted-it.co.uk";
-$EmailTo = "endymion1818@gmail.com";
-$Subject = "Reply from Website hosted-it.co.uk";
-$Name = Trim(stripslashes($_POST['Name'])); 
-$Tel = Trim(stripslashes($_POST['Tel'])); 
-$Email = Trim(stripslashes($_POST['Email'])); 
-$Message = Trim(stripslashes($_POST['Message'])); 
+$EmailFrom = "website@anneandtimswedding.info";
+$EmailTo = "7amberleygrove@blueyonder.co.uk";
+$Subject = "Reply from Website at Anne & Tims Wedding";
+$attendees = Trim(stripslashes($_POST['attendees'])); 
+$dietary = Trim(stripslashes($_POST['dietary'])); 
+$playlist = Trim(stripslashes($_POST['playlist'])); 
 
 // validation
 $validationOK=true;
@@ -17,17 +16,17 @@ if (!$validationOK) {
 
 // prepare email body text
 $Body = "";
-$Body .= "Name: ";
-$Body .= $Name;
+$Body .= "Hello! The following reply was recieved via the contact form on http://anneandtimswedding.info: ";
 $Body .= "\n";
-$Body .= "Tel: ";
+$Body .= "attendees: ";
+$Body .= $attendees;
 $Body .= $Tel;
 $Body .= "\n";
-$Body .= "Email: ";
-$Body .= $Email;
+$Body .= "dietary: ";
+$Body .= $dietary;
 $Body .= "\n";
-$Body .= "Message: ";
-$Body .= $Message;
+$Body .= "playlist: ";
+$Body .= $playlist;
 $Body .= "\n";
 
 // send email 

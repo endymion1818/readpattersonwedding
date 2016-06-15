@@ -14,19 +14,20 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
+
   to {
     opacity: 1;
+    -webkit-transform: none;
     transform: none;
   }
 }
 .hostillustration {
   animation: fadeIn 2s ease-in;
 }
-.waypoint {
-  opacity: 0;
-}
 .fadeInUp {
-  animation: fadeInUp 2s forwards;
+  opacity: 0;
+  animation: fadeInUp 2s both;
 }

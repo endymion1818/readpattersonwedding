@@ -24,9 +24,10 @@
       </a>
       <br/>
       <ul class="nav nav-pills">
-        <li><a href="/demo/#location" id="locationlink">Location</a></li>
-        <li><a href="/demo/#programme" id="programmelink">Programme</a></li>
-        <li><a href="/demo/#contact" id="contactlink">RSVP</a></li>
+        <li><a href="#location" id="locationlink">Location</a></li>
+        <li><a href="#programme" id="programmelink">Programme</a></li>
+        <li><a href="#contact" id="contactlink">RSVP</a></li>
+        <li><a href="#socialwall" id="socialwalllink">Your photos</a></li>
       </ul>
     </div>
   </header>

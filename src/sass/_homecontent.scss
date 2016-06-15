@@ -129,6 +129,171 @@ section.contact {
     }
   }
 }
+.dcsns-toolbar {
+  display: none;
+}
+div#social-stream {
+  min-height: 600px;
+}
+/*global */
+a[data-group="dc-filter"] img,
+img.icon {
+  width: 30px;
+  height: 30px;
+}
+img.icon {
+  padding: 2px;
+    background: #fff;
+    float: left;
+}
+/*    chooser    */
+div.dcsns-toolbar {
+    display: none;
+}
+/*    stream    */
+ul.stream {
+  padding-left: 0;
+  list-style-type: none;
+}
+ul.stream li {
+  margin: 7px 0;
+  width: 100%;
+  padding:15px;
+  margin-bottom:15px;
+  border: 1px solid grey;
+  background: white;
+  font-size: 13px;
+}
+ul.stream li span {
+  font-family: 'Avenir', sans-serif;
+}
+ul.stream li.dcsns-twitter {
+  border: 1px solid #4099ff;
+}
+ul.stream li.dcsns-facebook {
+  border: 1px solid #3b5998;
+}
+ul.stream li.dcsns-instagram {
+  border: 1px solid #C3792B;
+}
+ul.stream li a {
+  font-family: 'Avenir', sans-serif;
+  color: #777;
+}
+ul.stream li div.inner {
+  margin-bottom: 15px;
+  top: 0;
+  left: 0;
+}
+ul.stream li div.inner span.section-text {
+    display: block;
+    margin-bottom: 15px;
+    overflow: hidden;
+    line-height:20px;
+  font-size:12px;
+}
+ul.stream li div.inner span.section-text .twitter-user {
+  display: block;
+  margin-bottom: 8px;
+}
+ul.stream li div.inner span.section-text .twitter-user a {
+  color: #ddd;
+  font-size: 13px;
+  line-height: 12px;
+}
+ul.stream li div.inner span.section-text .twitter-user a strong {
+  font-size:14px;
+  color: #777;
+  line-height: 18px;
+}
+ul.stream li div.inner span.section-text a {
+  color:#333;
+}
+ul.stream li div.inner span.section-text a img {
+  width: 100%;
+  height: auto;
+  margin: 5px 0;
+  margin-top:12px;
+}
+ul.stream li div.inner span.section-text a strong {
+  display: block;
+  font-weight: normal;
+  text-transform:uppercase;
+  font-size:14px;
+}
+ul.stream li div.inner span.section-share {
+
+}
+ul.stream li div.inner span.section-share a {
+
+}
+ul.stream li span.section-intro {
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 7px;
+  margin-top: 1px;
+  background-color: white;
+  font-size:12px;
+}
+ul.stream li span.section-intro a {
+  font-family: 'Avenir', sans-serif;
+  color: #333;
+}
+ul.stream li span.section-intro span {
+
+}
+.stream li.dcsns-twitter .section-intro, .filter .f-twitter a:hover, .wall-outer .dcsns-toolbar .filter .f-twitter a.iso-active,
+.stream li.dcsns-instagram .section-intro, .filter .f-instagram a:hover, .wall-outer .dcsns-toolbar .filter .f-instagram a.iso-active {
+  /* gah, still got inline styles */
+  background: transparent!important;
+}
+.section-user, .stream li.dcsns-instagram .section-meta {
+  font-size:12px;
+}
+
+.inner span.section-thumb a:not(.thumb) img {
+  width: 100%;
+  height: auto;
+  margin-top:2px;
+  margin-bottom: 15px;
+}
+.stream li.dcsns-instagram .inner .section-meta img {
+  display: none;
+}
+.stream li.dcsns-instagram .inner .section-user a {
+  margin-right: 5px;
+}
+/*   specific feeds styles   */
+.dcsns-twitter a.thumb {
+  display:none;
+}
+.stream li.dcsns-instagram .inner .section-intro span {
+  background: transparent!important;
+}
+@media (min-width: 480px){
+  section#news {
+    padding-top: 40px;
+  }
+  ul.stream li {
+    width: 94%;
+    margin: 7px;
+  }
+}
+@media (min-width: 768px){
+  ul.stream li {
+    width: 48%;
+  }
+}
+@media (min-width: 992px){
+  ul.stream li {
+    width: 24%;
+  }
+  .less-pad {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+
 section.panelcontact {
   padding-top: 30vh;
   background: white;

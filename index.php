@@ -2,6 +2,23 @@
   $pagetitle = 'Tim & Anne\'s Wedding | Details and Bookings';
   $pagedesc  = 'Tim Read and Anne Patterson are getting married! If you have recieved an invitation as a guest during the day or for the evening, please register your attendance here. You can also find information about the location of the event and a schedule for the day.';
   include('header.php');?>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '871561892966717',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
   <section class="content home-content" id="home">
     <div class="container">
       <img
@@ -144,34 +161,20 @@
   </section>
 <section class="content contact" id="contact">
   <div class="container">
-    <h2 class="text-center">RSVP</h2>
+    <h2 class="text-center">Gifts</h2>
     <br/>
-    <div class="col-sm-6">
-      <h3>Respondez ici, s'il vous plait!</h3>
-      <p>You can use this form on the right to confirm your attendance to the wedding!</p>
-      <h3>Gifts</h3>
-      <p>We would be delighted simply to see you at our wedding  and help us celebrate our special day together.  We don’t have a gift list but if you wish to make a gesture, then a contribution towards our dream honeymoon later in the year would be much appreciated.</p>
+    <div class="col-sm-6 col-sm-offset-3">
+      <p>We would be delighted simply to see you at our wedding and help us celebrate our special day together.  We don’t have a gift list but if you wish to make a gesture, then a contribution towards our dream honeymoon later in the year would be much appreciated.</p>
+      <p>Alternatively, if you would prefer to make a donation to a charity then Croydon Branch Diabetes UK, Marie Curie, and Cats Protection League are all causes we support, but feel free to make a gift to the charity of your own choosing.</p>
     </div>
-    <div class="col-sm-6">
-      <form method="post" action="contactengine.php" id="replyform">
-        <label for="Booking">Your Booking reference</label><br>
-        <input type="text" class="form-control" name="Booking" id="booking" maxlength="60" required /><br>
-        <label for="attendees">Who's coming?</label><br>
-        <input type="text" class="form-control" name="attendees" id="attendees" maxlength="60" required /><br>
-        <label for="Dietary">Dietary Requirements</label><br>
-        <textarea type="textarea" class="form-control" name="dietary" id="dietary" maxlength="60" required /></textarea><br>
-        <label for="playlist">Playlist Requests</label><br>
-        <textarea name="playlist" class="form-control" rows="2" cols="20" id="playlist" maxlength="2000" required></textarea><br>
-        <label for="present">Present Request</label><br>
-        <input type="radio" name="present" value="toaster" checked> Toaster<br>
-        <input type="radio" name="present" value="toaster"> Toaster<br>
-        <input type="radio" name="present" value="toaster"> Toaster<br>
-        <input type="radio" name="present" value="toaster"> Toaster<br>
-        <input type="radio" name="present" value="toaster"> Toast rack<br>
-        <input type="radio" name="present" value="other"> Other<br><br>
-        <button type="submit" name="submit" value="Submit" class="btn btn-submit">Submit</button>
-      </form>
-    </div>
+  </div>
+</section>
+<section class="content panel3 social-wall" id="socialwall">
+  <div class="container">
+    <h2 class="text-center">Your Photos</h2>
+    <h3 class="text-center">Tag your photos #anneandtim2016 on Twitter to appear here, or upload them to dropbox and share them with us!</a></h3>
+    <br>
+    <div class="social-stream" id="social-stream"></div>
   </div>
 </section>
 <?php include('footer.php');?>
